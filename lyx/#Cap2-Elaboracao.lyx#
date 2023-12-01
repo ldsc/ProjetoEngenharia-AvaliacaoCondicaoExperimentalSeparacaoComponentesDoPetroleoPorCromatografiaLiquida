@@ -1,0 +1,2293 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois da definição dos objetivos, da especificação do software e da montagem
+ dos primeiros diagramas de caso de uso, a equipe de desenvolvimento do
+ projeto de engenharia passa por um processo de elaboração que envolve o
+ estudo de conceitos relacionados ao sistema a ser desenvolvido, a análise
+ de domínio e a identificação de pacotes.
+ 
+\end_layout
+
+\begin_layout Standard
+Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
+ iniciais de forma a desenvolver um sistema útil, que atenda às necessidades
+ do usuário e, na medida do possível, permita seu reuso e futura extensão.
+\end_layout
+
+\begin_layout Standard
+Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
+ forma que este seja flexível, considerando-se aspectos como custos e prazos.
+\end_layout
+
+\begin_layout Section
+Experimento de cromatografia liquida:
+\end_layout
+
+\begin_layout Standard
+A Cromatografia Líquida é uma técnica amplamente utilizada na análise e
+ separação de compostos presentes no petróleo, incluindo os compostos SARA
+ (Saturados, Aromáticos, Resinas e Asfaltenos).
+ O método SARA é uma abordagem comum para caracterizar a composição do petróleo
+ em termos dessas quatro frações principais.
+\end_layout
+
+\begin_layout Subsection
+Preparação da Amostra:
+\end_layout
+
+\begin_layout Itemize
+A amostra de petróleo é preparada para a análise.
+ Isso pode envolver a diluição da amostra e, em alguns casos, a remoção
+ de impurezas que podem interferir na análise.
+\end_layout
+
+\begin_layout Subsection
+Escolha da Fase Estacionária e Móvel:
+\end_layout
+
+\begin_layout Itemize
+A fase estacionária é escolhida com base nas propriedades dos compostos
+ a serem separados.
+ Uma fase estacionária típica pode ser uma coluna empacotada com um material
+ poroso, como sílica gel ou alumina.
+ 
+\end_layout
+
+\begin_layout Itemize
+A fase móvel, geralmente um solvente ou uma mistura de solventes, é escolhida
+ com base na polaridade e seletividade desejadas.
+\end_layout
+
+\begin_layout Subsection
+Injeção da Amostra:
+\end_layout
+
+\begin_layout Itemize
+A amostra preparada é injetada na coluna cromatográfica.
+\end_layout
+
+\begin_layout Subsection
+Eluição dos Componentes:
+\end_layout
+
+\begin_layout Itemize
+A fase móvel (eluente) é bombeada através da coluna, interagindo com a fase
+ estacionária.
+ 
+\end_layout
+
+\begin_layout Itemize
+Os diferentes compostos SARA interagem de maneiras distintas com a fase
+ estacionária e móvel.
+ Compostos mais saturados tendem a interagir menos com a fase estacionária,
+ enquanto compostos mais aromáticos podem interagir mais fortemente.
+\end_layout
+
+\begin_layout Subsection
+Detecção e Análise:
+\end_layout
+
+\begin_layout Itemize
+A medida que os componentes SARA se movem pela coluna, são detectados e
+ registrados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../imagens/Experimento Cromatografia.jpeg
+	width 50text%
+	height 50text%
+	keepAspectRatio
+	BoundingBox 0bp 0bp 1200bp 1600bp
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Experimento Cromatografia Líquida
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cálculo da porcentagem dos compostos SARA:
+\end_layout
+
+\begin_layout Standard
+Após a eluição dos compostos através da coluna cromatográfica, as frações
+ são coletadas e frequentemente sujeitas a técnicas adicionais para isolar
+ e identificar os compostos presentes, a técinica utilizada para este trabalho
+ é a de evaporação, em que as frações coletadas podem ser evaporadas para
+ remover o solvente utilizado na eluição, este processo leva em consideração
+ os ponros de ebuliçaõ dos solventes utilizados em comparação aos da fração
+ de Hidrocarbonetos.
+ Com isso, teremos os valores dos volumes dos compostos SARA do petróleo
+ e fazendo uma avaliação do volume inicial da amostra de óleo cru, podemos
+ obter a porcentagem de cada fração.
+ 
+\end_layout
+
+\begin_layout Section
+Análise de domínio 
+\end_layout
+
+\begin_layout Itemize
+Área relacionada:
+\end_layout
+
+\begin_layout Itemize
+A principal área relacionada a este projeto é a estática aplicada a Geoquimica
+ do petróleo.
+\end_layout
+
+\begin_layout Itemize
+Sub-área relacionada:
+\end_layout
+
+\begin_layout Itemize
+Planejamento Fatorial
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+De acordo com Breitkreitz et al., (2014), independente da área de pesquisa,
+ é necessário conhecer as variáveis (ou fatores) que afetam o sistema em
+ estudo e a extensão desta influência, a fim de melhorar o processo de uma
+ maneira geral, com o objetivo de reduzir tempo e custos.
+ Assim, no método multivariado realiza-se o menor número de experimentos
+ necessários para extrair o máximo de informação dos dados coletados de
+ modo a avaliar e/ou otimizar um produto ou processo.
+\end_layout
+
+\begin_layout Standard
+Quando se realiza um planejamento fatorial o objetivo é estudar variáveis
+ estatisticamente independentes, ou seja, aquelas que podem ter seus valores
+ alterados e controlados de forma independente umas das outras (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "breitkreitz2014experimento"
+literal "true"
+
+\end_inset
+
+).
+ Assim, com a realização do planejamento fatorial pode-se determinar as
+ quantidades de ensaios a serem realizados de acordo com os números de variáveis
+ envolvidas no processo, é possível identificar as variáveis que apresentarão
+ respostas significativas para o experimento, além de otimizar tempo, capital
+ e reagentes químicos, gerando assim menos resíduos ao meio ambiente.
+\end_layout
+
+\begin_layout Standard
+Adicionalmente, o planejamento fatorial avalia os parâmetros que têm efeitos
+ significativos em seus resultados experimentais, avaliando simultaneamente
+ as variáveis envolvidas no processo.
+ Essas interações são as principais componentes de muitos processos de otimizaçã
+o, levando às condições de relevância dos parâmetros em estudo (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "teofilo2006quimiometria"
+literal "true"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+O tipo de planejamento fatorial que será utilizado é uma escolha do pesquisador,
+ mas de forma geral, para um estudo inicial com o intuito de se fazer uma
+ triagem de variáveis e identificar aquelas que possuem maior influência
+ na resposta, sugere-se o uso de planejamentos fracionários ou completlos
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "breitkreitz2014experimento"
+literal "true"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+O planejamento fatorial normalmente é adequado para estudar, de forma eficiente
+ e econômica, o efeito conjunto de vários fatores sobre uma variável resposta
+ de interesse.
+\end_layout
+
+\begin_layout Standard
+O planejamento fatorial do tipo 2² é considerável o mais comum, por praticar
+ menores números de níveis, no entanto, se mostra vantajoso, pois, indica
+ tendências de resultados para análises de métodos posteriores (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cunico2008planejamento"
+literal "true"
+
+\end_inset
+
+).
+ Uma boa ferramenta de escolha após os resultados obtidos do planejamento
+ fatorial é o gráfico de superfície de resposta, onde conseguimos obter
+ o ponto máximo de obtenção das frações do petróleo através da cromatográfica
+ líquida (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "teofilo2006quimiometria"
+literal "true"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Quando se pretende otimizar custos e tempo de pesquisa é interessante o
+ implemento do planejamento fatorial com ponto central.
+ Através dele consegue-se estimar o desvio padrão dos resultados sem a necessida
+de de realizar repetições para cada resultado obtido.
+ O cálculo da variância em experimentos feitos com ponto central se dá através
+ da média das variáveis envolvidas (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "teofilo2006quimiometria"
+literal "true"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+O objetivo e determinar, a partir do planejamento fatorial com ponto central,
+ as melhores condições experimentais para a obtenção da fração de hidrocarboneto
+s saturados do petróleo utilizando a técnica de cromatografia em fase líquida
+ clássica em coluna aberta, visando diminuir a quantidade de solvente e
+ adsorvente utilizado, aumentar a porcentagem de recuperação da fração e,
+ como consequência, reduzir a quantidade de resíduos líquidos e sólidos
+ gerados ao meio ambiente
+\end_layout
+
+\begin_layout Subsection
+Planejamentos fatoriais com ponto central
+\end_layout
+
+\begin_layout Standard
+Em muitos casos, a realização de repetições autênticas pode ser algo inconvenien
+te por diversas razões.
+ Para contornar este infortúnio e obter uma boa estimativa dos erros, um
+ experimento é normalmente incluído no centro do planejamento, em que o
+ valor médio dos níveis de todas as variáveis é empregado.
+ São os conhecidos experimentos no ponto central (nível zero).
+ Deste modo, é possível avaliar a significância dos efeitos ou coeficientes,
+ tanto em planejamentos de triagem (completos ou fracionários) como em metodolog
+ias de superfície de resposta (discutidos mais adiante).
+ Além desta vantagem, recomenda-se este tipo de experimento pelas seguintes
+ razões: o risco de perder a relação não linear entre os intervalos é minimizado
+ e é possível estimar um modelo razoável e verificar se há falta de ajuste.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/planejamento2^2.PNG
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Planejamento 2
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+2 
+\end_layout
+
+\end_inset
+
+com ponto central.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Logicamente não há como fugir das repetições, mas o número destas, na maioria
+ dos casos, é significativamente reduzido.
+ No entanto, esta metodologia é possível de ser aplicada somente quando
+ se utilizam variáveis quantitativas, visto que, para variáveis qualitativas,
+ não há como adicionar níveis no ponto central.
+ 
+\end_layout
+
+\begin_layout Standard
+Os cálculos para estimativa de efeitos e coeficientes relacionados aos planejame
+ntos com ponto central serão discutidos no item Modelos empíricos em estudo
+ de triagem.
+\end_layout
+
+\begin_layout Subsection
+Modelos empíricos em estudo de triagem 
+\end_layout
+
+\begin_layout Standard
+Pode-se assumir, desde o início do experimento, que o sistema estudado (domínio
+ experimental) é regido por alguma função que é descrita pelas variáveis
+ experimentais.
+ Normalmente esta função pode ser aproximada por um polinômio, o qual pode
+ fornecer uma boa descrição entre os fatores e a resposta obtida.
+ A ordem deste polinômio é limitada pelo tipo de planejamento usado.
+ 
+\end_layout
+
+\begin_layout Standard
+Planejamentos fatoriais de dois níveis, completos ou fracionários, podem
+ estimar apenas efeitos principais e interações.
+ 
+\end_layout
+
+\begin_layout Standard
+Planejamentos fatoriais de três níveis (ponto central) podem estimar, além
+ disso, o grau de curvatura na resposta.
+ 
+\end_layout
+
+\begin_layout Standard
+Para descrever tais modelos em um estudo de triagem, são utilizados os polinômio
+s mais simples, ou seja, aqueles que contêm apenas termos lineares.
+ Considerando um exemplo para três variáveis, 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, dois polinômios seriam:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y=b_{0}+b_{1}x_{1}+b_{2}x_{2}+b_{3}x_{3}+e
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+y=b_{0}+b_{1}x_{1}+b_{2}x_{2}+b_{3}x_{3}+b_{12}x_{1}x_{2}+b_{13}x_{1}x_{3}+b_{23}x_{2}x_{3}+b_{123}x_{1}x_{2}x_{3}+e
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segundo a Equação 1, o coeficiente 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+é o valor populacional da média de todas as respostas obtidas, 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $b_{3}$
+\end_inset
+
+ são os coeficientes relacionados com as variáveis 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ e 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+, respectivamente, e é o erro aleatório associado ao modelo e, para o caso
+ da Equação 2,
+\begin_inset Formula $b_{12}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{13}$
+\end_inset
+
+, 
+\begin_inset Formula $b_{23}$
+\end_inset
+
+ são os coeficientes para as interações 
+\begin_inset Formula $x_{1}x_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}x_{3}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{2}x_{3}$
+\end_inset
+
+ e 
+\begin_inset Formula $b_{123}$
+\end_inset
+
+ é o coeficiente para a interação
+\begin_inset Formula $x_{1}x{}_{2}x_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A partir do planejamento montado, pode-se construir a matriz de coeficientes
+ de contraste, de acordo com a Tabela 1.
+ A matriz de coeficientes de contraste 
+\begin_inset Formula $X$
+\end_inset
+
+, juntamente com o vetor de respostas 
+\begin_inset Formula $y$
+\end_inset
+
+, obtido experimentalmente, será utilizada para cálculo dos coeficientes
+ do modelo, conhecidos também como vetor de regressão.
+ 
+\end_layout
+
+\begin_layout Standard
+O modelo procurado, descrito pelas Equações 1 e 2 pode ser representado
+ matricialmente pela Equação 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{y}=Xb
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ é o vetor das respostas estimadas pelo modelo e b o vetor de regressão.
+\end_layout
+
+\begin_layout Standard
+Uma maneira de determinar o vetor de regressão 
+\begin_inset Formula $b$
+\end_inset
+
+ é através do método dos quadrados mínimos, definido pela Equação 4, em
+ que 
+\begin_inset Formula $X^{t}$
+\end_inset
+
+ indica a transposta de 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b=(X^{t}X){}^{-1}X^{t}y
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(X^{t}X)^{-1}$
+\end_inset
+
+é a matriz inversa do produto da transposta da matriz 
+\begin_inset Formula $X$
+\end_inset
+
+com ela mesma.
+\end_layout
+
+\begin_layout Standard
+Para um planejamento fatorial completo, a matriz 
+\begin_inset Formula $X$
+\end_inset
+
+ é quadrada e ortogonal, onde n corresponde ao número de ensaios.
+ Isto ocorre pois as colunas de 
+\begin_inset Formula $X$
+\end_inset
+
+ não estão normalizadas, portanto
+\begin_inset Formula $X^{-1}$
+\end_inset
+
+ = 
+\begin_inset Formula $X^{t}$
+\end_inset
+
+.
+ Neste caso, a Equação 8 se resume à Equação 5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b=(\frac{1}{n})X^{t}y
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Equação 4 é geral e pode ser empregada para se fazer a estimativa de efeitos
+ e coeficientes para todos os planejamentos descritos neste artigo, no entanto
+ a Equação 5 é específica para o planejamento fatorial completo, não sendo
+ aplicável aos outros planejamentos descritos.
+\end_layout
+
+\begin_layout Standard
+Como as variáveis são estudadas em dois níveis codificados, cada efeito
+ satisfaz à variação de duas unidades da variável correspondente.
+ Se considerarmos os fatores individualmente, pode-se provar que o valor
+ de cada coeficiente do modelo é a metade do valor do efeito correspondente,
+ exceto para 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+, cujo valor é o mesmo do calculado para seu efeito.
+ Desta maneira, o modelo empregado para descrever as respostas é elaborado
+ em função dos efeitos por unidade de variação individual.
+\end_layout
+
+\begin_layout Subsection
+Estimativa dos erros para os efeitos através de repetições
+\end_layout
+
+\begin_layout Standard
+Normalmente os resultados obtidos em experimentos de planejamento fatorial
+ completo ou fracionário com repetições consistem de uma pequena amostra
+ de um hipotético conjunto maior, representado por uma população.
+ Destes dados podemos obter a média amostral, a variância amostral e o desvio
+ padrão amostral, como se segue:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bar{y}=\stackrel[i=1]{r}{\sum y\text{i}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s\text{²}=\frac{\stackrel[i=1]{r}{\sum}(yi-\bar{y})^{2}}{(r-1)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s=\pm\sqrt{\frac{\stackrel[i=1]{r}{\sum}(y{\normalcolor i-\bar{y}})^{2}}{(r-1)}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que
+\begin_inset Formula $r$
+\end_inset
+
+ é o número de replicatas, isto é, o número de ensaios realizados em um
+ mesmo ponto experimental (nível), 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ são os valores de cada observação individual, 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ é o valor médio, 
+\begin_inset Formula $s²$
+\end_inset
+
+ é a variância e 
+\begin_inset Formula $s$
+\end_inset
+
+ o desvio padrão.
+\end_layout
+
+\begin_layout Standard
+A soma dos desvios da média amostral de 
+\begin_inset Formula $r$
+\end_inset
+
+ replicatas é necessariamente zero.
+ Isto requer que 
+\begin_inset Formula $∑(y_{i}-\bar{y})=0$
+\end_inset
+
+ constitua uma restri- ção linear nos desvios usados no cálculo de 
+\begin_inset Formula $s²$
+\end_inset
+
+.
+ Está subentendido que com 
+\begin_inset Formula $r–1$
+\end_inset
+
+ replicatas é possível determinar a que falta.
+ Os r resíduos 
+\begin_inset Formula $y-$
+\end_inset
+
+
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ e, conseqüentemente, a soma dos seus quadrados juntamente com a variância
+ amostral são ditas ter, por esta razão, 
+\begin_inset Formula $r–1$
+\end_inset
+
+graus de liberdade.
+ A perda de um grau de liberdade está associada à necessidade de substituir
+ a média populacional pela média amostral derivada dos dados.
+ Desta maneira, quando repetições genuínas são realizadas em uma série de
+ condições experimentais, a variação entre suas observações pode ser usada
+ para estimar o desvio padrão de uma simples observação e, conseqüentemente,
+ o desvio dos efeitos.
+ Todos os ensaios, inclusive repetições, devem ser realizados aleatoriamente,
+ refazendo todas as etapas do experimento.
+ As repetições realizadas desta maneira são consideradas genuínas.
+\end_layout
+
+\begin_layout Standard
+Em um experimento em que cada ensaio foi realizado 
+\begin_inset Formula $r$
+\end_inset
+
+ vezes, se o valor de
+\begin_inset Formula $r$
+\end_inset
+
+for pequeno, por exemplo, 
+\begin_inset Formula $2≤r≤10$
+\end_inset
+
+, haverá poucos graus de liberdade para o cálculo da variância.
+ Uma maneira para se obter um maior número de graus de liberdade é realizando
+ uma estimativa conjunta das variâncias, conforme a Equação 9
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s\text{²}=\frac{\stackrel[i=1]{n}{\sum(r{\normalcolor i-1})}si\text{²}}{\stackrel[i=1]{n}{\sum(r{\normalcolor i-1})}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+ν=\stackrel[i=1]{n}{\sum(}r{\normalcolor i-1)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O resultado da Equação 9 reflete a variância conjunta (
+\begin_inset Formula $s²_{c}$
+\end_inset
+
+) de cada observação individual 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ sendo o erro padrão igual à raiz quadrada do mesmo.
+ A Equação 10, que é exatamente o denominador da Equação 9 é, portanto,
+ o número de graus de liberdade da estimativa conjunta, designada como 
+\begin_inset Formula $ν$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Considerando a realização de repetições autênticas, que cada efeito é uma
+ combinação linear dos valores de
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ dos 
+\begin_inset Formula $n$
+\end_inset
+
+ ensaios, com coeficientes 
+\begin_inset Formula $c$
+\end_inset
+
+ iguais a + 
+\begin_inset Formula $2/n$
+\end_inset
+
+ e 
+\begin_inset Formula $-2/n$
+\end_inset
+
+.
+ Levando em consideração a aleatoriedade dos ensaios, tais valores são estatisti
+camente independentes e apresentam a mesma variância populacional 
+\begin_inset Formula $σ²$
+\end_inset
+
+.
+ Neste caso, por definição, as correlações entre todas as variáveis são
+ nulas, e a variância da combinação linear das variáveis aleatórias pode
+ ser dada por.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+σ\text{²}=\underset{i}{\sum c\text{²i σ²i}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Transportando a Equação 11 para o nosso mundo amostral, pode-se provar que
+ a variância de cada efeito é dada por
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{(ef)}=\frac{4s\text{²}}{\stackrel[i=1]{n}{\sum}r_{{\normalcolor i}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $s²_{c}$
+\end_inset
+
+ é dada pela Equação 9 e 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ é o número de replicatas em cada ensaio 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+E, finalmente, para calcular o valor do erro de cada efeito, basta extrair
+ a raiz quadrada de 
+\begin_inset Formula $V_{(ef)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Estimativa dos erros para os efeitos, sem repetições 
+\end_layout
+
+\begin_layout Standard
+Uma maneira de estimar erros de efeitos sem a realização de repetições é
+ supor que interações de altas ordens para 
+\begin_inset Formula $k≥3$
+\end_inset
+
+ não são significativos e, portanto, são erros experimentais nos valores
+ dos efeitos.
+\end_layout
+
+\begin_layout Standard
+Aplicando a Equação 9 sobre estes efeitos de interação e fazendo algumas
+ considerações, obtém-se a variância dos efeitos conforme a 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:13"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{(ef)}=\frac{\stackrel{}{\sum(ef_{ii})\text{²\ }}}{l}\label{eq:13}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $ef_{ii}$
+\end_inset
+
+ são os efeitos de interação considerados como erros experimentais e l é
+ o número total de efeitos considerados.
+\end_layout
+
+\begin_layout Standard
+É preciso estar atento ao utilizar este tipo de estimativa do erro.
+ Nem sempre os efeitos de altas ordens são irrelevantes e, se tais efeitos
+ forem incluídos no cálculo, os erros tornam-se altos e, desta maneira,
+ não é possível distinguir com confiabilidade aqueles que são realmente
+ importantes.
+\end_layout
+
+\begin_layout Standard
+O número de graus de liberdade utilizado para avaliação dos efeitos agregados
+ a estes erros é o mesmo número total de efeitos considerados como erros,
+ isto é, o valor l da Equação 13.
+ 
+\end_layout
+
+\begin_layout Subsection
+Estimativa dos erros para os efeitos e coeficientes a partir das repetições
+ no ponto central 
+\end_layout
+
+\begin_layout Standard
+Conforme mencionado anteriormente, uma das grandes vantagens da inclusão
+ de experimentos no centro do planejamento é devida à estimativa do erro
+ com poucas repetições, normalmente entre 3 e 5.
+\end_layout
+
+\begin_layout Standard
+A partir das repetições realizadas é possível obter a média e a variância
+ das replicatas de acordo com as Equações 10 e 11, respectivamente.
+\end_layout
+
+\begin_layout Standard
+Por outro lado, sendo os coeficientes obtidos através da Equação 8, nota-se
+ que a matriz 
+\begin_inset Formula $(X^{t}X)^{-1}$
+\end_inset
+
+ apresenta grande influência na variância dos parâmetros de regressão.
+ O produto desta matriz com o valor da variância obtida através das repetições
+ no ponto central (Equação 11) fornece a matriz 
+\begin_inset Formula $V(b)$
+\end_inset
+
+ conhecida como matriz de variância-covariância (Equação 14).
+ A matriz 
+\begin_inset Formula $V(b)$
+\end_inset
+
+ é simétrica e os elementos de sua diagonal são as variâncias dos parâmetros
+ de regressão, na mesma ordem em que elas aparecem na equação de regressão.
+ Os elementos fora da diagonal são as covariâncias entre os parâmetros de
+ regressão.
+ A raiz quadrada dos elementos da diagonal principal da matriz 
+\begin_inset Formula $V(b)$
+\end_inset
+
+ determina os valores correspondentes dos erros padrão 
+\begin_inset Formula $(s_{bi})$
+\end_inset
+
+dos coeficientes calculados (Equação 15).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V(b)=(X^{t}X)^{-1}s\text{²}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+s_{bi}=\text{±}\sqrt{v(b)}_{ij,i}=1,2,...,n
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Identificação dos efeitos e coeficientes significativos 
+\end_layout
+
+\begin_layout Standard
+Na literatura há diferentes métodos para se avaliar efeitos e coeficientes
+ significativos; entre os mais usados destaca-se a análise de variância
+ (ANOVA), o gráfico de probabilidade normal (distribuição normal) e a comparação
+ de efeitos com uma medida independente da variabilidade.
+ Neste trabalho, as avaliações de significância para a decisão estatística,
+ tanto para efeitos como para coeficientes de modelos, foram realizadas
+ empregando o teste 
+\begin_inset Formula $t$
+\end_inset
+
+ (distribuição de Student), através do valor 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Para realizar a interpretação correta utilizando o valor 
+\begin_inset Formula $p$
+\end_inset
+
+ é necessário compreender os testes de hipótese e significância, conforme
+ descrito abaixo.
+\end_layout
+
+\begin_layout Standard
+Em muitos casos, formula-se uma hipótese estatística com o propósito de
+ rejeitá-la ou invalidá-la.
+ Por ex., se o desejo é decidir se um sistema é diferente de outro, formula-se
+ a hipótese de que não há diferença entre os sistemas.
+ Essa hipótese é denominada nula e representada por H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+.
+ Qualquer hipótese diferente da pré-fixada é denominada hipótese alternativa
+ e é normalmente representada por H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se uma hipótese for rejeitada quando deveria ser aceita, diz-se que foi
+ cometido um erro tipo I.
+ Se, por outro lado, uma hipótese for aceita quando deveria ter sido rejeitada,
+ diz-se que foi cometido um erro do tipo II.
+ Em ambos os casos foi tomada uma decisão errada ou foi cometido um erro
+ de julgamento.
+\end_layout
+
+\begin_layout Standard
+Para que qualquer teste de hipótese ou regra de decisão seja adequada, eles
+ devem ser planejados de modo que os erros de decisão sejam reduzidos ao
+ mínimo.
+ 
+\end_layout
+
+\begin_layout Standard
+Ao testar uma hipótese estabelecida, a probabilidade máxima, representada
+ freqüentemente por α, com a qual se sujeitaria a correr o risco de um erro
+ do tipo I é denominada nível de significância do teste.
+\end_layout
+
+\begin_layout Standard
+Se, por ex., é escolhido um nível de significância 0,05 ou 5%, há então cerca
+ de 5 chances em 100 da hipótese nula ser rejeitada, quando deveria ser
+ aceita, isto é, há uma confiança de 95% de que se tomou uma decisão correta.
+ Nesses casos, diz-se que a hipótese é rejeitada ao nível de significância
+ 0,05, o que significa que a probabilidade de erro seria de 0,05.
+\end_layout
+
+\begin_layout Standard
+Considerando a hipótese nula de que o valor do efeito se confunde com seu
+ erro, pode-se formular a seguinte regra de decisão: 
+\end_layout
+
+\begin_layout Standard
+a) rejeição da hipótese nula com 5% de significância, quando o valor de
+ 
+\begin_inset Formula $t_{calc}$
+\end_inset
+
+ situar-se fora do intervalo entre 
+\begin_inset Formula $±tα(|t_{calc}|≥tα).$
+\end_inset
+
+ Isso equivale a dizer que o valor estatístico amostral observado é significativ
+o no nível definido e,
+\end_layout
+
+\begin_layout Standard
+b) aceitação da hipótese, caso contrário.
+\end_layout
+
+\begin_layout Standard
+Uma maneira alternativa de concluir o teste de hipótese é comparar o valor
+ p do teste estatístico amostral com o nível de significância
+\begin_inset Formula $α$
+\end_inset
+
+.
+ O valor 
+\begin_inset Formula $p$
+\end_inset
+
+ do teste estatístico amostral é o menor nível de significância para que
+ se rejeite H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+.
+ Neste sentido, compara-se o valor 
+\begin_inset Formula $p$
+\end_inset
+
+ com
+\begin_inset Formula $α$
+\end_inset
+
+ e, se o valor 
+\begin_inset Formula $p≤α$
+\end_inset
+
+ rejeita-se H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+, caso contrário H 
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+ é aceito.
+ A vantagem de se conhecer o valor p está na possibilidade de se avaliar
+ todos os níveis de significância para que o resultado observado possa ser
+ estatisticamente rejeitado.
+ A representação gráfica do valor 
+\begin_inset Formula $p$
+\end_inset
+
+ é descrita na Figura 3.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/repre-p.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Replesentação gráfica do valor p para um teste unilateral.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conforme as Figuras 3.2(a e b), o nível de significância α é a área hachurada
+ no gráfico de distribuição.
+ Na Figura 3.2a a área correspondente ao valor p é maior que o nível de significâ
+ncia, portanto, o valor calculado do teste estatístico está fora da região
+ crítica, o que implica em aceitar H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+.
+ Para a Figura 3b a área do valor 
+\begin_inset Formula $p$
+\end_inset
+
+ é menor que o nível de significância e assim, o valor calculado do teste
+ estatístico está dentro da região crítica, o que implica em rejeitar H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+.
+ É importante ressaltar que esta discussão é válida tanto para testes unilaterai
+s quanto para bilaterais.
+\end_layout
+
+\begin_layout Standard
+Especificamente, o valor p representa a probabilidade de validade do erro
+ envolvido no resultado observado, isto é, como representativo da população.
+ Por ex., levando em consideração o valor de um efeito, se o valor do teste
+ estatístico calculado (razão entre o efeito e seu erro) apresentar um grande
+ desvio da distribuição de Student, ele provavelmente descreve algo mais
+ que o resíduo experimental.
+ Desta maneira, será significativo dentro de um intervalo de confiança e
+ assim, |
+\begin_inset Formula $t_{calc}|≥t_{α}$
+\end_inset
+
+ ou 
+\begin_inset Formula $p≤$
+\end_inset
+
+α, para o número de graus de liberdade em questão.
+\end_layout
+
+\begin_layout Subsection
+Avaliação do modelo 
+\end_layout
+
+\begin_layout Standard
+O modelo obtido pode não ser exatamente aquele que descreve a região estudada
+ do sistema e, neste caso, não pode ser usado para fazer estimativas para
+ deslocamento e muito menos para extrair conclusões sobre a região ótima.
+ A maneira mais confiável de se avaliar a qualidade do ajuste do modelo
+ é empregando a análise de variância (ANOVA).
+\end_layout
+
+\begin_layout Standard
+Na ANOVA a variação total da resposta é definida como a soma quadrática
+ de dois componentes: a soma quadrática da regressão (
+\begin_inset Formula $SQ_{regr}$
+\end_inset
+
+ ) e a soma quadrática dos resíduos (
+\begin_inset Formula $SQ_{res}$
+\end_inset
+
+).
+ A soma quadrática da variação total, corrigida para a média (
+\begin_inset Formula $SQ_{total}$
+\end_inset
+
+) pode, assim, ser escrita como a Equação 16 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SQ_{total}=SQ_{regr}+SQ_{res}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $SQ_{regr}$
+\end_inset
+
+ e 
+\begin_inset Formula $SQ_{res}$
+\end_inset
+
+ são apresentadas com mais detalhes nas Equações 17 e 18, respectivamente.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SQr_{egr}=\stackrel[_{i=1}]{_{m}}{\sum}\stackrel[_{j=1}]{_{r_{i}}}{\sum}(\hat{y}_{i}-\bar{y})\text{²}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SQ_{res}=\stackrel[_{i=1}]{_{m}}{\sum}\stackrel[_{j=1}]{_{ri}}{\sum}(y{}_{ij}-\bar{y})\text{²}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Da Equação 24, 
+\begin_inset Formula $m$
+\end_inset
+
+ é o número total de níveis do planejamento, isto é, pontos experimentais
+ do planejamento 
+\begin_inset Formula $\hat{y}_{i}$
+\end_inset
+
+ é o valor estimado pelo modelo para o nível 
+\begin_inset Formula $i$
+\end_inset
+
+ e 
+\begin_inset Formula $\bar{y}_{i}$
+\end_inset
+
+ é o valor médio das replicatas (
+\begin_inset Formula $r$
+\end_inset
+
+).
+ No entanto, como há somente replicatas no ponto central, a média das replicatas
+ nos níveis (+) mais e (-) menos é o próprio valor observado do ensaio naquele
+ nível.
+ Note que o segundo somatório indica que se deve fazer o quadrado das diferenças
+ inclusive com cada repetição.
+ 
+\end_layout
+
+\begin_layout Standard
+As replicatas realizadas no ponto central deixarão um resíduo para cada
+ observação yi.
+ A soma quadrática destes resíduos fornece a soma quadrática residual somente
+ no nível zero.
+\end_layout
+
+\begin_layout Standard
+A Equação 25 indica que o quadrado da diferença entre o valor de cada observação
+ (
+\begin_inset Formula $y_{i}$
+\end_inset
+
+) e o valor estimado (
+\begin_inset Formula $\hat{y}_{i}$
+\end_inset
+
+ ) e, inclusive das replicatas (
+\begin_inset Formula $y_{j}$
+\end_inset
+
+) em cada nível (
+\begin_inset Formula $m$
+\end_inset
+
+), fornece a soma quadrática residual de todos os níveis.
+ 
+\end_layout
+
+\begin_layout Standard
+Quando algum modelo é ajustado aos dados, a soma quadrática do erro puro
+ é sempre uma parte da soma quadrática dos resíduos.
+ Então, cada resíduo pode ser desmembrado em duas partes, isto é
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(y_{ij}-\hat{y}_{i})=(y_{ij}-\bar{y})-(\hat{y}_{i}-\bar{y}_{i})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pela Equação 19, o primeiro termo da direita diz respeito à diferença entre
+ o valor de cada observação individual no nível e a média de todas as observaçõe
+s naquele nível.
+ Já o segundo termo corresponde à diferença entre o valor estimado no nível
+ e a média de todas as observações naquele nível.
+ A subtração entre estes dois termos fornece como resposta o resíduo de
+ cada observação individual.
+ Para evitar os termos negativos na Equação 19, tomam-se as suas diferenças
+ quadráticas e obtém-se Equação 20
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\stackrel[_{i=1}]{_{m}}{\sum}\stackrel[_{j=1}]{_{ri}}{\sum}(y_{ij}-\hat{y}_{i})\text{²}=\stackrel[_{i=1}]{_{m}}{\sum}\stackrel[_{j=1}]{_{ri}}{\sum}(y_{ij}-\bar{y})\text{²}+\stackrel[_{i=1}]{_{m}}{\sum}(\hat{y}_{i}-\bar{y})\text{²}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O primeiro termo da direita é chamado de soma quadrática do erro puro e
+ está relacionado exclusivamente com os erros aleatórios das replicatas.
+ Já o segundo termo da direita é chamado de soma quadrática da falta de
+ ajuste, pois ele é uma medida da discrepância entre a resposta do modelo
+ de previsão (
+\begin_inset Formula $\hat{y}i$
+\end_inset
+
+) e a média das replicatas ( 
+\begin_inset Formula $\bar{y}i$
+\end_inset
+
+) realizadas no conjunto de condições experimentais.
+\end_layout
+
+\begin_layout Standard
+A Equação 20 pode ser resumida da seguinte maneira 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+SQ_{res}=SQ_{ep}+SQ{}_{faj}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para cada fonte de variação (regressão, resíduos, falta de ajuste, erro
+ puro e total), é necessário obter o número de graus de liberdade.
+ Não introduzindo detalhes, pode-se provar que o número de graus de liberdade
+ para as Equações 17, 18 e 20 são 
+\begin_inset Formula $p–1$
+\end_inset
+
+, 
+\begin_inset Formula $n–p$
+\end_inset
+
+ e 
+\begin_inset Formula $(n–m$
+\end_inset
+
+) + (
+\begin_inset Formula $m–p$
+\end_inset
+
+), respectivamente, em que 
+\begin_inset Formula $p$
+\end_inset
+
+ é o número de parâmetros (coeficientes) do modelo,
+\begin_inset Formula $n$
+\end_inset
+
+ é o número total de observações (ensaios) e m é o número de níveis do planejame
+nto.
+ O número de graus de liberdade para as outras fontes de variação pode ser
+ obtido por cálculos algébricos simples.
+\end_layout
+
+\begin_layout Standard
+A divisão da soma quadrática de cada fonte de variação pelo seu respectivo
+ número de grau de liberdade fornece a média quadrática (
+\begin_inset Formula $MQ$
+\end_inset
+
+).
+ A razão entre a média quadrática da regressão (
+\begin_inset Formula $MQ_{reg}$
+\end_inset
+
+ ) pela média quadrática dos resíduos (
+\begin_inset Formula $MQ_{res}$
+\end_inset
+
+), que nada mais é do que a razão entre duas variâncias, pode ser usada
+ para comparar tais fontes de variação através do teste F (distribuição
+ de Fisher), levando em consideração seus respectivos números de graus de
+ liberdade.
+ O mesmo pode ser feito para a razão entre a média quadrática da falta de
+ ajuste (
+\begin_inset Formula $MQ_{faj}$
+\end_inset
+
+) pela média quadrática do erro puro (
+\begin_inset Formula $MQ_{ep}$
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout Standard
+Assim, como foi realizada a avaliação dos efeitos e coeficientes empregando
+ o teste t, através do valor 
+\begin_inset Formula $p$
+\end_inset
+
+, o mesmo será feito para comparar as duas fontes de variação entre si,
+ empregando-se neste caso o teste F (Equação 22)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{MQ{\normalcolor 1}}{MQ{\normalcolor 2}}=F{\normalcolor v{\normalcolor _{1}{\normalcolor v{\normalcolor _{2}}}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+em que 
+\begin_inset Formula $MQ_{1}$
+\end_inset
+
+ e 
+\begin_inset Formula $MQ_{2}$
+\end_inset
+
+ são as médias quadráticas das fontes de variação 1 e 2, respectivamente,
+ e 
+\begin_inset Formula $ν_{1},ν_{2}$
+\end_inset
+
+ são seus respectivos números de graus de liberdade.
+\end_layout
+
+\begin_layout Standard
+Exemplificando, a razão entre as médias quadráticas da falta de ajuste e
+ do erro puro é o valor calculado do teste estatístico (
+\begin_inset Formula $F_{calc}$
+\end_inset
+
+), que é usado para comparar qual é mais significativo.
+ Pode-se formular uma hipótese nula (H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+) considerando que não há diferença entre as fontes de variação comparadas.
+ Esta hipótese se reflete na seguinte regra de decisão:
+\end_layout
+
+\begin_layout Standard
+a) rejeição da hipótese nula com 5% de significância, quando o valor de
+\begin_inset Formula $F_{calc}$
+\end_inset
+
+ se situar fora do intervalo definido por Fα (|
+\begin_inset Formula $F_{calc}$
+\end_inset
+
+| ≥ 
+\begin_inset Formula $Fα$
+\end_inset
+
+), ou seja, 
+\begin_inset Formula $p≤α$
+\end_inset
+
+.
+ Isso equivale a dizer que o valor estatístico amostral observado é significativ
+o no nível definido e as fontes de variação comparadas são diferentes.
+\end_layout
+
+\begin_layout Standard
+b) Aceitação da hipótese nula, caso contrário.
+ Se H
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+ 0
+\end_layout
+
+\end_inset
+
+ for rejeitada para 
+\begin_inset Formula $MQ_{faj}/MQ_{ep}$
+\end_inset
+
+, isto é, 
+\begin_inset Formula $p≤α$
+\end_inset
+
+, então há uma falta de ajuste significativa ao nível de probabilidade e
+ número de graus de liberdade definidos (normalmente, 
+\begin_inset Formula $α$
+\end_inset
+
+ = 0,05) e o modelo não é adequado.
+\end_layout
+
+\begin_layout Standard
+Em termos práticos, um bom modelo necessita ter uma regressão significativa
+ e uma falta de ajuste não significativa.
+ Isto equivale a dizer que a maior parte da variação total das observações
+ em torno da média deve ser descrita pela equação de regressão e o restante
+ certamente, ficará com os resíduos.
+ Da variação que fica com os resíduos é esperado que a maior parte fique
+ com o erro puro, que é o erro experimental, e não com a falta de ajuste,
+ que está diretamente relacionada com o modelo.
+\end_layout
+
+\begin_layout Standard
+Outros parâmetros para observar se toda variação em torno da média foi explicada
+ pela regressão são o valor do coeficiente de variação R² (Equação 23) e
+ o gráfico dos resíduos.
+ O valor de 
+\begin_inset Formula $R²$
+\end_inset
+
+ representa a fração da variação que é explicada pela falta de ajuste do
+ modelo (Equação 23).
+ Quanto mais próximo de 1 o valor do coeficiente estiver, melhor estará
+ o ajuste do modelo às respostas observadas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R\text{²}=\frac{SQ{\normalcolor _{res}}}{SQ{\normalcolor _{total}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note que o erro puro não explica nada do modelo, então o valor máximo possível
+ de 
+\begin_inset Formula $R²$
+\end_inset
+
+ é 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R\text{²}=\frac{SQ{\normalcolor _{total}}-SQ{\normalcolor _{ep}}}{SQ_{{\normalcolor total}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A análise de variância (ANOVA), de acordo com as Equações descritas para
+ avaliação do modelo, está resumida na tabela abaixo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fonte de variação
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+N° de graus de liberdade
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Regressão
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\begin_inset Formula $_{regr}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{regr}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{regr}$
+\end_inset
+
+/MQ
+\begin_inset Formula $_{res}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resíduos
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\begin_inset Formula $_{res}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n-p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{res}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Falta de ajuste
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\begin_inset Formula $_{faj}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $m-p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{faj}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{faj}$
+\end_inset
+
+/MQ
+\begin_inset Formula $_{ep}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erro puro
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\begin_inset Formula $_{ep}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n-m$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MQ
+\begin_inset Formula $_{ep}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SQ
+\begin_inset Formula $_{total}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $n-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Análise de variância para regressão multipla
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Uma boa prática é examinar a distribuição dos resíduos, pois ajuda a verificar
+ se não há nada de errado com o modelo.
+ Neste caso, pode-se fazer um gráfico dos valores estimados pelo modelo
+ (
+\begin_inset Formula $\hat{y}i$
+\end_inset
+
+) com os valores da diferença entre os valores observados experimentalmente
+ (
+\begin_inset Formula $y_{i}$
+\end_inset
+
+) e seus respectivos valores estimados, isto é, (
+\begin_inset Formula $yi$
+\end_inset
+
+ – 
+\begin_inset Formula $\hat{y}i$
+\end_inset
+
+).
+ Se os resíduos não estiverem aleatoriamente distribuídos, pode-se desconfiar
+ do modelo e investir em outros recursos para sua melhoria.
+\end_layout
+
+\end_body
+\end_document

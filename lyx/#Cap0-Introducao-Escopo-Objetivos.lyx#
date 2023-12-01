@@ -1,0 +1,718 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Modelo Disciplinas: 
+\end_layout
+
+\begin_layout Plain Layout
+- Projeto de Engenharia
+\end_layout
+
+\begin_layout Plain Layout
+- Programação Prática
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE: 
+\begin_inset Newline newline
+\end_inset
+
+AVALIAÇÃO DAS CONDIÇÕES EXPERIMENTAIS PARA SEPARAÇÃO DE COMPONENTES DO PETRÓLEO
+ POR CROMATOGRAFIA LÍQUIDA 
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size large
+Nota: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para eu corrigir deve se chamar -> Versão 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para defesa deve se chamar -> Versão 0.6
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+Durante a defesa peço para fazer correções;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão final deve ser entregue encadernada e deve se chamar -> Versão
+ 0.7
+\end_layout
+
+\begin_layout Plain Layout
+Colocamos 0.7 pois mesmo a versão final ainda não foi totalmente corrigida
+ e testada.
+\end_layout
+
+\begin_layout Plain Layout
+Quando estiver totalmente corrigida, testada, e colocada em repositório
+ no github, daí poderá se chamar Versão 1.0;
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+Quando uma segunda equipe estiver trabalhando os nomes devem seguir esta
+ mesma regra
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para eu corrigir deve se chamar -> Versão 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para defesa deve se chamar -> Versão 1.6
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+Durante a defesa peço para fazer correções;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão final deve ser entregue encadernada e deve se chamar -> Versão
+ 1.7
+\end_layout
+
+\begin_layout Plain Layout
+Alunos que venham trabalhar num projeto pré-existente, ou seja, que vão
+ ampliar um código pré-existente tem de editar o texto no lyx no modo de
+ revisão; 
+\end_layout
+
+\begin_layout Plain Layout
+V em Documento->Controle de Alteraçoes->ControleAlteraçoes
+\end_layout
+
+\begin_layout Plain Layout
+Assim, quando apagar algo ou adicionar algo o \SpecialChar LyX
+ identifica as alteraçes,
+ facilitando a identificacao e correçao das mudancas.
+\end_layout
+
+\begin_layout Plain Layout
+As mudanças também precisam ser comitadas e enviadas para o servidor github.
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+JHONNY COSTA CARVALHO
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o valor de 4cm pode ser alterado, para que a distribuição fique mais uniforme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Versão 2018 - Semestre 2019/1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{Jhonny Costa cavalho} 
+\backslash
+rfoot{
+\backslash
+today }
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste trabalho desenvolve-se o software para avaliação das melhores condições
+ experimentais para a obtenção da fração de hidrocarbonetos saturados do
+ petóleo por meio de planejamento fatorial com ponto central com o intuito
+ de minimizar o uso de solventes e adsolventes e obter um maior rendimento
+ na separação desta fração.
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O petróleo bruto inalterado contém carbono (~ 80 - 87%), hidrogênio (~ 12
+ - 15%), enxofre (~ 0,1-5%), oxigênio (0,1-4,5%) e nitrogênio (0,1 - 1,5%).
+ Grande parte do nitrogênio, enxofre e oxigênio estão associados às resinas
+ e asfaltenos e são frequentemente denominados compostos NSO.
+ Outros elementos presentes no petróleo incluem vários metais, em particular
+ níquel e vanádio, que geralmente estão presentes em pequenas quantidades.
+ A composição do petróleo bruto contém em média 57% de hidrocarbonetos saturados
+ (S), 29% de hidrocarbonetos aromáticos (A) e 14% de resinas (R) e asfaltenos
+ (A) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "killops2013introduction"
+literal "true"
+
+\end_inset
+
+.
+ No entanto, esta composição média pode variar significativamente devido,
+ por exemplo, à origem da matéria orgânica, à história térmica e às alterações
+ secundárias ocorridas em reservatório após acumulação.
+\end_layout
+
+\begin_layout Standard
+O petróleo contém também vários componentes lipídicos preservados, designados
+ biomarcadores, os quais podem ser associados com compostos precursores
+ biológicos, porque seus esqueletos básicos são preservados durante a diagênese
+ e grande parte da catagênese.
+ Esses biomarcadores podem estar presentes nas frações de hidrocarbonetos
+ saturados e aromáticos, tais como os esteranos normais, hopanos e os esteróides
+ aromáticos.
+ Porém, geralmente representam menos de 1% em peso de óleos brutos inalterados
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "killops2013introduction"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A análise composicional confiável das frações do petróleo é muito importante
+ porque fornece informações que afetam desde a exploração de petróleo até
+ a produção, transporte e refino 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bissada2016group"
+literal "true"
+
+\end_inset
+
+.
+ Por exemplo, na análise do sistema petrolífero, em correlações com a rocha
+ geradora, na previsão de reservatórios com potencial para precipitar asfaltenos
+, na resolução de problemas ambientais, dentre outros 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ashoori2016thermal"
+literal "true"
+
+\end_inset
+
+.
+ Assim, para fornecer adequadamente estas informações efetua-se a separação
+ dos componentes SARA para determinar a concentração relativa de cada grupo
+ químico e obter frações de alta pureza para posteriores análises por cromatogra
+fia gasosa acoplada a espectrometria de massas (CG-EM) e análise isotópica,
+ por exemplo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "bissada2016group"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Vários procedimentos podem ser adotados para separação das frações SARA,
+ tais como cromatografia em fase líquida clássica (CLC), cromatografia em
+ camada delgada por detecção por ionização em chama (do inglês
+\shape italic
+ 
+\lang english
+thin layer chromatography - flame ionization detection
+\shape default
+\lang brazilian
+, TLC-FID), cromatografia líquida de alta performance (HPLC), dentre outros
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "karlsen1991analysis,fan2002rapid,jiang2008tlc"
+literal "true"
+
+\end_inset
+
+.
+ A CLC, apesar de ser uma técnica simples, é amplamente utilizada como etapa
+ preliminar para análises instrumentais mais sensíveis como CG-EM especialmente
+ quando não se dispõe de outros métodos de separação.
+ Vale ressaltar, no entanto, que este método requer quantidades significativas
+ de solventes, adsorventes e estes ainda podem interferir na adequada separação
+ das frações presentes na matriz analisada 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "collins2006fundamentos"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Assim, aliada à necessidade da indústria, faz-se necessário a busca por
+ processos que otimizem a utilização desses materiais (solventes orgânicos
+ e adsorventes) usados na caracterização do petróleo.
+ Uma ferramenta capaz de determinar melhores condições experimentais com
+ consequente diminuição da quantidade de solvente utilizado é o planejamento
+ fatorial 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "brasil"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dada a importância desta etapa para análises posteriores, uma vez que a
+ separação das frações do petróleo pode ser influenciada pelas quantidades
+ de adsorvente e de solvente utilizados, este trabalho tem como objetivo
+ o desenvolvimento de um software com o auxilio de planejamento fatorial,
+ com ponto central, determinar as melhores condições experimentais para
+ a obtenção da fração de saturados, aromáticos e polares (NSO) do petróleo.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Determinar, a partir do planejamento fatorial com ponto central, as melhores
+ condições experimentais para a obtenção da fração de hidrocarbonetos saturados,
+ aromáticos e polares do petróleo utilizando a técnica de cromatografia
+ em fase líquida clássica em coluna aberta, visando diminuir a quantidade
+ de solvente utilizado e aumentar a porcentagem de recuperação da fração.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Calcular desvio padrao e variância;
+\end_layout
+
+\begin_layout Itemize
+Determinar as melhores condições para separação em coluna cromatográfica
+ clássica a partir de Planejamento Composto Central e teste F;
+\end_layout
+
+\begin_layout Itemize
+Otimizar o tempo calculando o volume do solvente e o seu tipo;
+\end_layout
+
+\begin_layout Itemize
+Cálcular a porcentagem das três frações de composntos do petróleo;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

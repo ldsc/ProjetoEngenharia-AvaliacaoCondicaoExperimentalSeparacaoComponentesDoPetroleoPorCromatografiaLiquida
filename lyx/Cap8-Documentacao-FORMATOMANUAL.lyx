@@ -1,0 +1,415 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Manual do Usuário
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{APOSTILA DE USO DO PROGRAMA SIMULADOR DE ESTIMATIVA DE RESERVATORIOS
+ UTILIZANDO EBM, COM ENFOQUE NOS RESERVATORIOS DE GAS - Disciplina Engenharia
+ de Reservatório
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\backslash
+rhead{
+\backslash
+thepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+
+\series bold
+Título do Software
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+O programa tem o objetivo de simular as condições de reservatório para estimar
+ a reserva de gás.
+\end_layout
+
+\begin_layout Section
+Referências Bibliográficas
+\end_layout
+
+\begin_layout Itemize
+ROSA, ADALBERTO J.; CARVALHO, RENATO S.; XAVIER, JOSÉ AUGUSTO D.
+ Engenharia de Reservatório de Petróleo.
+ Rio de Janeiro: Editora Interciência, 2006.
+\end_layout
+
+\begin_layout Itemize
+AHMED, TAREK.
+ Reservoir Engeneering Handbook.
+ Second Edition.
+ Texas: Gulf Professional Publishing, 2001.
+\end_layout
+
+\begin_layout Itemize
+DAKE, L.
+ P.
+ Fundamentals of reservoir engineering.
+ Rio de Janeiro: Elsevier, 1978.
+\end_layout
+
+\begin_layout Section
+Fundamentos
+\end_layout
+
+\begin_layout Standard
+O programa faz a previsão do volume que vai ser encontrado dentro do reservatóri
+o estudado utilizando dados reais obitidos em testes.
+ Com essas informações, utiliza-se a Equação de Balanço de Materiais para
+ fazer a previsão, sendo adaptada de acordo com cada mecanismo.
+\end_layout
+
+\begin_layout Subsubsection*
+Para Reservatório de Gás:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{P}{Z}=\frac{1}{Vi-We}\left(\frac{PiVi}{Zi}-\frac{TPo}{To}Gp\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+P = Pressão
+\end_layout
+
+\begin_layout Itemize
+Z = Coeficiente de compressibilidade
+\end_layout
+
+\begin_layout Itemize
+V = Volume ocupado de gás
+\end_layout
+
+\begin_layout Itemize
+We = Influxo de Água Acumulado
+\end_layout
+
+\begin_layout Itemize
+Gp = Gás produzido
+\end_layout
+
+\begin_layout Itemize
+Índice i = condições iniciais no reservatório
+\end_layout
+
+\begin_layout Itemize
+Índice o = condições padrão
+\end_layout
+
+\begin_layout Subsubsection*
+Para Reservatório de Óleo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=\frac{Np\left[Bt+\left(Rp-Rsi\right)Bg\right]-We}{Bt-Bti+mBti\left(\frac{Bg}{Bgi}-1\right)+\left(1+m\right)Boi\left(\frac{CwSwi+Cf}{1-Swi}\right)\triangle P}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+N = Volume original de óleo
+\end_layout
+
+\begin_layout Itemize
+Np = Volume de óleo produzido
+\end_layout
+
+\begin_layout Itemize
+Bt = Fator volume-formação total do óleo
+\end_layout
+
+\begin_layout Itemize
+Rp = Razão gás/óleo acumulada
+\end_layout
+
+\begin_layout Itemize
+Rs = Razão de solubilidade
+\end_layout
+
+\begin_layout Itemize
+Bg = Fator volume-formação do gás
+\end_layout
+
+\begin_layout Itemize
+We = Influxo de água acumulado
+\end_layout
+
+\begin_layout Itemize
+m = razão entre o volume original de gás e o volume original de óleo em
+ condições de reservatório
+\end_layout
+
+\begin_layout Itemize
+Índice i = condições iniciais no reservatório
+\end_layout
+
+\begin_layout Standard
+Os modelos utilizados para o cálculo do influxo de água são:
+\end_layout
+
+\begin_layout Subparagraph
+Modelo Pot Aquifer
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $We=(cw+cf)Wi\triangle p$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+We = Influxo de água acumulado
+\end_layout
+
+\begin_layout Itemize
+Wi = Volume inicial de água no aquífero
+\end_layout
+
+\begin_layout Itemize
+cw = compressibilidade da água
+\end_layout
+
+\begin_layout Itemize
+cf = compressibilidade dos poros
+\end_layout
+
+\begin_layout Itemize
+∆p = queda de pressão no aquífero
+\end_layout
+
+\begin_layout Subparagraph
+Modelo Schilthuis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $dWe/dt=J(pi-p)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Itemize
+J = constante de influxo de água ou índice de produtividade do aquífero
+\end_layout
+
+\begin_layout Itemize
+pi = pressão inicial do sistema
+\end_layout
+
+\begin_layout Itemize
+p = pressao no contto água-óleo
+\end_layout
+
+\begin_layout Section
+Procedimento
+\end_layout
+
+\begin_layout Enumerate
+Escolher o fluido presente no reservatório:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Para reservatório de gás, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Para reservatório de óleo, escolha 2;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Escolher o mecanismo de produção do reservatório:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Em reservatório de gás:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Gás Seco, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Gas seco anormalmente pressurizado escolha 2;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco com influxo escolha 3;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco com influxo modelo Pot Aquifer escolha 4;
+\end_layout
+
+\begin_layout Enumerate
+Gás seco com influxo modelo Schilthuis escolha 5;
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Em reservatório de óleo:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Com gás em solução, escolha 1;
+\end_layout
+
+\begin_layout Enumerate
+Com capa de gás, escolha 2;
+\end_layout
+
+\begin_layout Enumerate
+Sob influxo de água, escolha 3;
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Dizer o número de medições de dados feitas nos testes.
+\end_layout
+
+\begin_layout Enumerate
+Informar os dados do reservatório pedidos.
+\end_layout
+
+\begin_layout Enumerate
+Obter o volume original de gás ou óleo.
+\end_layout
+
+\begin_layout Section
+Exemplo uso
+\end_layout
+
+\begin_layout Standard
+Colocar aqui os mesmos exemplos dos testes
+\end_layout
+
+\end_body
+\end_document

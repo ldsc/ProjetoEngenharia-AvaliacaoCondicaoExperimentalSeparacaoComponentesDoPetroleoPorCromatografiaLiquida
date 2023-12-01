@@ -1,0 +1,713 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Análise Orientada a Objeto}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+AOO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+AOO
+\end_layout
+
+\end_inset
+
+ – Análise Orientada a Objeto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise orientada a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:AOO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A terceira etapa do desenvolvimento de um projeto de engenharia, no nosso
+ caso um software aplicado a engenharia de petróleo, é a AOO – Análise Orientada
+ a Objeto.
+ A AOO utiliza algumas regras para identificar os objetos de interesse,
+ as relacões entre os pacotes, as classes, os atributos, os métodos, as
+ heranças, as associações, as agregações, as composições e as dependências.
+ 
+\end_layout
+
+\begin_layout Standard
+O modelo de análise deve ser conciso, simplificado e deve mostrar o que
+ deve ser feito, não se preocupando como isso será realizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+O modelo funcional (aspectos microdinâmicos, veja a seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:AOO-Modelagem-funcional"
+
+\end_inset
+
+).
+ Gabriela: O que fazer com essa nota? Não ficou claro.
+ 
+\end_layout
+
+\begin_layout Itemize
+DESCONSIDERAR
+\end_layout
+
+\begin_layout Itemize
+algumas notas tem lembretes para mim mesmo.
+\end_layout
+
+\end_inset
+
+O resultado da análise é um conjunto de diagramas que identificam os objetos
+ e seus relacionamentos.
+\end_layout
+
+\begin_layout Section
+Diagramas de classes
+\end_layout
+
+\begin_layout Standard
+O diagrama de classes é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-classes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagramaDeClasse.jpeg
+	width 70text%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Dicionário de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Dicionário-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Calsse CExperimentoCromatografiaLiquida: representa o método de separação
+ das frações dos componetes dos Hidrocarbonetos.
+\end_layout
+
+\begin_layout Itemize
+Classe CEquipamentoColumaCromatografialiquida: representa a coluna responsável
+ por armazenar as fases estacionárias e móveis da cromatografia.
+\end_layout
+
+\begin_layout Itemize
+Classe CCopaVidraçariaBecker: representa o recipiente responsável por armezar
+ as frações de Hidrocarbonetos.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraSolvente: representa o valume de solvente utilizado com fase
+ móvel.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraOleo: representa o volume de óleo utilizado como fase estacionári
+a.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraHidrocarbonetiEluido: representa o volume da fração de Hidrocarbo
+netos eluido pelo volume de solvente.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraHidrocarboneteSaturado: representa o volume da fração de
+ Hidrocarbonetos Satirados.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraHidrocarbonetosAromatico: representa o volume da fração de
+ Hidrocarbonetos Aromáticos.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraHidrocarbonetosPolares: representa o volume da fração de
+ Hidrocarbonetos Polares.
+\end_layout
+
+\begin_layout Itemize
+Classe CFisher: representa o calculo do teste F fisher para a avaliação
+ do modelo de entre 2 amostra.
+\end_layout
+
+\begin_layout Itemize
+Classe CStudend: representa o calculo do teste t studend para avaliação
+ para multiplas amostras..
+\end_layout
+
+\begin_layout Itemize
+Classe CFPC22_02: representa os calculos dos efeitos das variaveis em analises
+ gerando a ANOVA.
+\end_layout
+
+\begin_layout Itemize
+Classe CEngenheiroQuimicoAnalitico: representa pessoa responsavel por preparar
+ e realizar experimento, obter os resultados e gerar um relatório.
+\end_layout
+
+\begin_layout Section
+Diagrama de seqüência – eventos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+
+ e mensagens
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mensagens
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de sequência
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:diagrama de sequência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
+ temporal.
+ Contém informações sobre o fluxo de controle do software.
+ Costuma ser montado a partir de um diagrama de caso de uso e estabelece
+ o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
+ do sistema.
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagrama de sequência geral
+\end_layout
+
+\begin_layout Standard
+Veja o 
+\shape italic
+\emph on
+diagrama de seqüência na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+O diagrama de sequência aqui representado, demonstra o caminho utilizado
+ para realizar o experimento de cromatografia líquida, obtendo assim os
+ dados pedidos pelo simulador que por sua vez chama a classe CFPC22_02 para
+ calcular as variâncias.
+ Em seguida o software calcula todos os parâmetros necessários para criar
+ ANOVA.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagramaDeSequencia.jpeg
+	lyxscale 85
+	width 55text%
+	rotateAngle 90
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+deve mostrar uma sequência geral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de comunicação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+comunicação
+\end_layout
+
+\end_inset
+
+ – colaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Diagrama-de-Comunicação"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de colaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "par:Diagrama-de-colaboração:"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+No diagrama de comunicação o foco é a interação e a troca de mensagens e
+ dados entre os objetos.
+ Veja na Figura 4.3 o diagrama de comunicação mostrando a sequência de operações
+ que cada um dos obejetos realiza durante a cromatografia e análise estatisticas
+ dos resultados .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagramaDeComunicação.jpeg
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de comunicação.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-comunicação"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de máquina de estado
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+estado
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de máquina de estado
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:diagrama de estados"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um diagrama de máquina de estado representa os diversos estados que o objeto
+ assume e os eventos que ocorrem ao longo de sua vida ou mesmo ao longo
+ de um processo (histórico do objeto).
+ É usado para modelar aspectos dinâmicos do objeto.
+\end_layout
+
+\begin_layout Standard
+A Figura 4.5 demonstra os estados e as transições entre eles realizadas durante
+ o experimento de cromatografia líquida e inserção de dados na Classe CFPC22_02
+ que apresenta durante a execução do software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagramaMaquinaDeEstado.jpeg
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de máquina de estado para a classe CFPC22_02.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-maquina-de-estado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de atividades
+\end_layout
+
+\begin_layout Standard
+Veja na Figura 4.6 o diagrama de atividades corresponde a uma atividade específic
+a das Classes CAmostraHidrocarbonetosSaturados, CAmostraHidrocarbonetosAmormatic
+os, CAmostraHidrocarbonetosPolares e CFPC22_02, onde calculam-se os volumes
+ das frações de Hidrocarbonetos, assim como o erro a partir dos coeficientes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagramaDeAtividades.jpeg
+	lyxscale 85
+	height 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de atividades do metodo minimos quadrados da classe CFP22_02.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-atividades"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+.
+\end_layout
+
+\end_body
+\end_document

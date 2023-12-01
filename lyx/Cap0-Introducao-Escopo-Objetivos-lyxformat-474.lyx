@@ -1,0 +1,660 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Modelo Disciplinas: 
+\end_layout
+
+\begin_layout Plain Layout
+- Projeto de Engenharia
+\end_layout
+
+\begin_layout Plain Layout
+- Programação Prática
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE 
+\begin_inset Newline newline
+\end_inset
+
+XXX
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size large
+Nota: 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para eu corrigir deve se chamar -> Versão 0.5
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para defesa deve se chamar -> Versão 0.6
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+Durante a defesa peço para fazer correções;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão final deve ser entregue encadernada e deve se chamar -> Versão
+ 0.7
+\end_layout
+
+\begin_layout Plain Layout
+Colocamos 0.7 pois mesmo a versão final ainda não foi totalmente corrigida
+ e testada.
+\end_layout
+
+\begin_layout Plain Layout
+Quando estiver totalmente corrigida, testada, e colocada em repositório
+ no github, daí poderá se chamar Versão 1.0;
+\end_layout
+
+\begin_layout Plain Layout
+.
+\end_layout
+
+\begin_layout Plain Layout
+Quando uma segunda equipe estiver trabalhando os nomes devem seguir esta
+ mesma regra
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para eu corrigir deve se chamar -> Versão 1.5
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão entregue para defesa deve se chamar -> Versão 1.6
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+Durante a defesa peço para fazer correções;
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+A versão final deve ser entregue encadernada e deve se chamar -> Versão
+ 1.7
+\end_layout
+
+\begin_layout Plain Layout
+Alunos que venham trabalhar num projeto pré-existente, ou seja, que vão
+ ampliar um código pré-existente tem de editar o texto no lyx no modo de
+ revisão; 
+\end_layout
+
+\begin_layout Plain Layout
+V em Documento->Controle de Alteraçoes->ControleAlteraçoes
+\end_layout
+
+\begin_layout Plain Layout
+Assim, quando apagar algo ou adicionar algo o LyX identifica as alteraçes,
+ facilitando a identificacao e correçao das mudancas.
+\end_layout
+
+\begin_layout Plain Layout
+As mudanças também precisam ser comitadas e enviadas para o servidor github.
+\end_layout
+
+\end_inset
+
+
+\size default
+
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Versão 1:
+\begin_inset Newline newline
+\end_inset
+
+AUTORES
+\begin_inset Newline newline
+\end_inset
+
+Versão 2:
+\begin_inset Newline newline
+\end_inset
+
+AUTORES
+\begin_inset Newline newline
+\end_inset
+
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+o valor de 4cm pode ser alterado, para que a distribuição fique mais uniforme
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Versão 2016 - Semestre 2016/1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+Nota: Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam
+ a atuação de um tecnólogo da atuação de um engenheiro é a capacidade que
+ o engenheiro deve ter de desenvolver projetos de engenharia.
+ 
+\end_layout
+
+\begin_layout Standard
+Como visto na "Parte I" da disciplina de "Programação Orientada a Objeto
+ com C++", existem diversos modelos/métodos/técnicas para o desenvolvimento
+ de projetos de engenharia.
+ Alguns destes modelos são mais simplificados e outros bastante complexos,
+ a escolha do modelo a ser utilizado depende do tipo e tamanho do problema
+ e dos recursos disponíveis (ex: infraestrutura física, recursos financeiros
+ e pessoal).
+\end_layout
+
+\begin_layout Standard
+De um modo geral o desenvolvimetno de um projeto de engenharia envolve uma
+ série de etapas,
+\end_layout
+
+\begin_layout Standard
+O mesmo envolve todo o ciclo de um projeto, isto é, especificação, elaboração,
+ análise, projeto, desenvolvimento, teste e documentação.
+\end_layout
+
+\begin_layout Standard
+Desta forma o presente trabalho envolve alguns objetivos didático/pedagócicos,
+ o primeiro o de fazer o aluno colocar em prática o que aprendeu nas disciplinas
+ de informática (fundamentos da computação, métodos numéricos, programação
+ C++), o segundo de colocar em prática sua capacidade de desenvolver um
+ projeto de engenharia completo, mesmo que sendo de pequeno porte.
+ 
+\end_layout
+
+\begin_layout Itemize
+ESTE MODELO DO LYX TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO
+ FINAL.
+ O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
+ DEVE ENTRAR EM CADA SEÇÃO.
+\end_layout
+
+\begin_layout Itemize
+O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
+ A ideia é fazer um resumo do resumo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{SeuNomeAqui} 
+\backslash
+rfoot{
+\backslash
+today }
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste trabalho desenvolve-se o software NOME_DO_SOFTWARE, um software aplicado
+ a solução de um problema específico de engenharia de petróleo.
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
+ sua importância, usos e aplicações em engenharia [de petróleo].
+\end_layout
+
+\begin_layout Itemize
+Delimitar o assunto.
+ Situá-lo no tempo e no espaço.
+ Situá-lo em relação a outros softwares.
+\end_layout
+
+\begin_layout Itemize
+Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
+ será feito depois, na elaboração.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
+ com engenharia de petróleo e com modelagem matemática computacional (ideia
+ de lógica, algoritmos,...).
+\end_layout
+
+\begin_layout Itemize
+Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
+ clara, direta, objetiva, o objetivo geral do software].
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Do ponto de vista da matemática/física/química o que poderá ser explorado.
+\end_layout
+
+\begin_layout Itemize
+Do ponto de vista da engenharia o que poderá ser explorado com o software.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Etapas:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelar física e matematicamente o problema.
+\end_layout
+
+\begin_layout Itemize
+Modelagem estática do software (diagramas de caso de uso, de pacotes, de
+ classes).
+\end_layout
+
+\begin_layout Itemize
+Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
+o os fluxos de processamento).
+\end_layout
+
+\begin_layout Itemize
+Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
+o, cada parte do software].
+\end_layout
+
+\begin_layout Itemize
+Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
+o, cada parte do software].
+\end_layout
+
+\begin_layout Itemize
+Simular (realizar simulações para teste do software desenvolvido).
+\end_layout
+
+\begin_layout Itemize
+Implementar manual simplificado de uso do software.
+\end_layout
+
+\begin_layout Itemize
+Documentar os códigos usando javadoc/doxygen de forma a permitir a fácil
+ manutenção e ampliação do mesmo.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
