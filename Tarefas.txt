@@ -1,0 +1,31 @@
+Etapa 1 - Uso do terminal, gitbash e git
+    Abrir o terminal
+    Criar diretório workdir2
+    Baixar o seu projeto neste diretório
+    Adicionar dentro do diretório test o arquivo Teste-01.txt
+    Colocar no  Teste-01.txt a descrição do cenário geral (caso de uso)
+    Salvar e adicionar no repositório
+    Enviar para o github
+    Enviar msg para professor informando conclusão da etapa 1, enviar junto o link do projeto no github
+
+Etapa 2 - Uso do LyX
+    Mostre com inserir uma figura flutuante
+    Como adicionar e dimensionar a figura
+    Como adicionar label
+    Como referenciar a figura
+    Como adicionar a referência de um livro
+    Como citar  livro
+    Como inserir listagem de código
+
+Etapa 3 - Aluno explica o projeto
+    Explicar escopo e objetivos
+    Explicar elaboração
+    Explicar e justificar os diagramas
+    Ouvir com atenção as mudanças solicitadas
+
+Etapa 4 - Correções no Umbrello, LyX
+    Fazer as alterações solicitadas pelo professor
+    Corrigir diagramas
+    Corrigir LyX
+    Atualizar tudo no github
+    Aguardar nota.
