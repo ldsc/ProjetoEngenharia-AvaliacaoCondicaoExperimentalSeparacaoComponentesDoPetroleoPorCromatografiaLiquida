@@ -1,6 +1,6 @@
 
-Colocar aqui c√≥digos desenvolvidos, arquivos .hy .cpp.
+Colocar aqui cÛdigos desenvolvidos, arquivos .hy .cpp.
 
-Aqui n√£o entram arquivos usados em testes;
-Arquivos usados para testar o funcionamento do programa ficam no diret√≥rio test.
+Aqui n„o entram arquivos usados em testes;
+Arquivos usados para testar o funcionamento do programa ficam no diretÛrio test.
 

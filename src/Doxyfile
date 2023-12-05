@@ -1,16 +1,16 @@
 # Arquivo gerado pelo programa doxygen
-# este arquivo Ã© um arquivo de configuraÃ§Ã£o, contÃ©m as instruÃ§Ãµes a serem seguidas
-# pelo programa doxygen para gerar a documentaÃ§Ã£o do desenvolvedor.
+# este arquivo é um arquivo de configuração, contém as instruções a serem seguidas
+# pelo programa doxygen para gerar a documentação do desenvolvedor.
 
 # Para aprender a usar o javadoc/doxegen consulte o site: https://www.doxygen.nl/
 
-# O que vocÃª pode fazer Ã© ler as instruÃ§Ãµes abaixo e modificar as configuraÃ§Ãµes,
-# basicamente sÃ£o instruÃ§Ãµes com YES/NO, ou seja, considerar ou nÃ£o determinada opÃ§Ã£o.
+# O que você pode fazer é ler as instruções abaixo e modificar as configurações,
+# basicamente são instruções com YES/NO, ou seja, considerar ou não determinada opção.
 
 # Dica:
-# 1- Documente seu cÃ³digo
+# 1- Documente seu código
 # 2- Rode o doxygen
-# 3- Veja como ficou a documentaÃ§Ã£o abrindo html/index.html
+# 3- Veja como ficou a documentação abrindo html/index.html
 # 4- Modifique este arquivo e rode novamente o doxygen, veja como ficou abrindo html/index.html
 
 # Doxyfile 1.8.6

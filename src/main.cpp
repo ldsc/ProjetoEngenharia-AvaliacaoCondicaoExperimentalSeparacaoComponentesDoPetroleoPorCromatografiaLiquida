@@ -18,7 +18,7 @@ int main()
 	int entrada = 0;
 	CFPC22_O2 planejamento; // objeto planejamento
 	
-	cout << "\n\n###### PLANEJAMENTO FATORIAL v1.0 ######\nAutor: Jhonny Carvalho; LENEP-UENF (2019)\n-----------------------------------------\n"; // TÃ­tulo em tela
+	cout << "\n\n###### PLANEJAMENTO FATORIAL v1.0 ######\nAutor: Jhonny Carvalho; LENEP-UENF (2019)\n-----------------------------------------\n"; // Título em tela
 
 	while (entrada != 1 && entrada != 2)
 	{
@@ -60,10 +60,10 @@ cout << "size=" << tmp11.size() << ", size=" << tmp21.size() << endl;//vetor c++
     //Gnuplot::set_GNUPlotPath("C:/program files/gnuplot/bin"); //setando Gnuplot no Windows
     //Gnuplot::Terminal("win"); //Utilizando terminal do Windows
 
-    CGnuplot gp("points"); //Define o estilo do grÃ¡fico
-    gp.Grid(); // Habilitar grid do grÃ¡fico ploatada
+    CGnuplot gp("points"); //Define o estilo do gráfico
+    gp.Grid(); // Habilitar grid do gráfico ploatada
     gp.set_pointsize (2.0); //Setando tamanho do ponto
-    gp.set_title ("Plot: Observados VS Estimados"); // Definindo tÃ­tulo para o grÃ¡fico
+    gp.set_title ("Plot: Observados VS Estimados"); // Definindo título para o gráfico
     gp.set_ylabel("Estimados"); //Definindo nome do Eixo Y
     gp.set_xlabel("Observados"); //Definindo nome do Eixo X
     gp.set_yautoscale (); // Seta automaticamente os limites para o eixo Y
@@ -72,10 +72,10 @@ cout << "size=" << tmp11.size() << ", size=" << tmp21.size() << endl;//vetor c++
     
 cout << "Digite 'enter' para encerrar.\n";
 
-   /// ofstream data ("resultados.txt", ofstream::out | ios::app ); // Costruindo a saÃ­da de dados p/ arquivo     
+   /// ofstream data ("resultados.txt", ofstream::out | ios::app ); // Costruindo a saída de dados p/ arquivo     
    /// data << tmp1;  
    /// data.close();
-    gp.SaveTo("grafico_Obs-VS-Estm","png"); // Salvando sessÃ£o do gnuplot para um arquivo 
+    gp.SaveTo("grafico_Obs-VS-Estm","png"); // Salvando sessão do gnuplot para um arquivo 
     cin.get();
 cin.get();
 

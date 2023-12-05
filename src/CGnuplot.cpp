@@ -428,7 +428,7 @@ Gnuplot& Gnuplot::savetops(const std::string &filename)
 //     std::ostringstream cmdstr;                          // Muda o nome do arquivo
 //     cmdstr << "set output \"" << filename << ".ps\"";   // Nome do arquivo
 //     this->cmd(cmdstr.str());
-//     this->replot();                                     // Replota o grÃ¡fico, agora salvando o arquivo ps
+//     this->replot();                                     // Replota o gráfico, agora salvando o arquivo ps
 // 
 //     ShowOnScreen ();                                    // Volta para terminal modo janela
     SaveTo(filename,"postscript", "color");
@@ -444,10 +444,10 @@ Gnuplot& Gnuplot::savetopng(const std::string &filename)
 //     std::ostringstream cmdstr;                          // Muda o nome do arquivo
 //     cmdstr << "set output \"" << filename << ".png\"";  // Nome do arquivo
 //     this->cmd(cmdstr.str());
-//     this->replot();                                     // Replota o grÃ¡fico, agora salvando o arquivo ps
-//                                                         // Retorna o terminal para o padrÃ£o janela
+//     this->replot();                                     // Replota o gráfico, agora salvando o arquivo ps
+//                                                         // Retorna o terminal para o padrão janela
 //     ShowOnScreen ();                                    // Volta para terminal modo janela
-//     this->replot();                                     // Replota o grÃ¡fico, agora na tela
+//     this->replot();                                     // Replota o gráfico, agora na tela
     SaveTo(filename,"png", "enhanced size 1280,960");
     
     return *this;
@@ -463,10 +463,10 @@ Gnuplot& Gnuplot::savetojpeg(const std::string &filename)
 //     std::ostringstream cmdstr;                          // Muda o nome do arquivo
 //     cmdstr << "set output \"" << filename << ".jpeg\"";  // Nome do arquivo
 //     this->cmd(cmdstr.str());
-//     this->replot();                                     // Replota o grÃ¡fico, agora salvando o arquivo ps
-//                                                         // Retorna o terminal para o padrÃ£o janela
+//     this->replot();                                     // Replota o gráfico, agora salvando o arquivo ps
+//                                                         // Retorna o terminal para o padrão janela
 //     ShowOnScreen ();                                    // Volta para terminal modo janela
-//     this->replot();                                     // Replota o grÃ¡fico, agora na tela
+//     this->replot();                                     // Replota o gráfico, agora na tela
     SaveTo(filename,"jpeg", "enhanced size 1280,960");
     
     return *this;
@@ -487,10 +487,10 @@ Gnuplot& Gnuplot::SaveTo(const std::string &filename,const std::string &terminal
     std::ostringstream cmdstr;                          // Muda o nome do arquivo
     cmdstr << "set output \"" << filename << "." << terminal_type << "\"";
     this->cmd(cmdstr.str());
-    this->replot();                                     // Replota o grÃ¡fico, agora salvando o arquivo ps
-                                                        // Retorna o terminal para o padrÃ£o janela
+    this->replot();                                     // Replota o gráfico, agora salvando o arquivo ps
+                                                        // Retorna o terminal para o padrão janela
     ShowOnScreen ();   
-    this->replot();                                     // Replota o grÃ¡fico, agora na tela
+    this->replot();                                     // Replota o gráfico, agora na tela
    
     return *this;
 }

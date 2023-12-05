@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -42,6 +42,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -72,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -86,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -100,7 +106,7 @@
 \begin_body
 
 \begin_layout Chapter
-Documentação 
+Documentação
 \end_layout
 
 \begin_layout Standard
@@ -317,6 +323,7 @@ Instalar o compilador g++ da GNU disponível em
 LatexCommand href
 name "http://gcc.gnu.org"
 target "http://gcc.gnu.org"
+literal "false"
 
 \end_inset
 
@@ -342,6 +349,7 @@ gnuplot
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.gnuplot.info/"
+literal "false"
 
 \end_inset
 
@@ -384,22 +392,10 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename /Volumes/JHONNY/imprimir/imagens/doxygen3.png
+	filename imagens/doxygen3.png
 	scale 35
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
 
 \end_inset
 
@@ -431,21 +427,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../imagens/doxygen2.png
+	filename imagens/doxygen2.png
 	scale 35
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
 
 \end_inset
 
@@ -474,21 +457,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename ../imagens/doxygen1.png
+	filename imagens/doxygen1.png
 	scale 35
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-centering
-\end_layout
 
 \end_inset
 

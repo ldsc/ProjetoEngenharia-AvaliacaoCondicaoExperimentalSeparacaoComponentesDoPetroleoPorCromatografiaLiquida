@@ -97,11 +97,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author -1380949907 "andre duarte bueno"
 \end_header
 
 \begin_body
@@ -668,7 +669,11 @@ Etapas:
 
 \begin_layout Plain Layout
 9.
- Análise de Rsultados.
+ Análise de R
+\change_inserted -1380949907 1701796124
+e
+\change_unchanged
+sultados.
 \end_layout
 
 \end_inset
@@ -756,11 +761,13 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagramaCasoDeUsoGeral.jpeg
+	filename imagens/DiagramaCasoDeUsoGeral.jpeg
 	width 100text%
 
 \end_inset
 
+
+\change_deleted -1380949907 1701796217
 
 \begin_inset Note Note
 status open
@@ -771,6 +778,8 @@ Atualizar/trocar as figuras deste modelo!!
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -811,8 +820,30 @@ status open
 
 \begin_layout Plain Layout
 \align center
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+relativo
+\end_layout
+
+\begin_layout Plain Layout
+../../../../Downloads/DiagramaCasoDeUsoGeral.jpeg
+\end_layout
+
+\begin_layout Plain Layout
+permanente
+\end_layout
+
+\begin_layout Plain Layout
+/home/andreduartebueno/Downloads/DiagramaCasoDeUsoGeral.jpeg
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
-	filename ../imagens/DiagramaCasoDeUsoEspecifico.jpeg
+	filename imagens/DiagramaCasoDeUsoEspecifico.jpeg
 	width 100text%
 
 \end_inset

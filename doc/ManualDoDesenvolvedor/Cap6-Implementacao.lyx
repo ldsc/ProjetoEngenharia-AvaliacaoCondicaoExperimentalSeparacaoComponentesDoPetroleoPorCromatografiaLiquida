@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 508
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -24,9 +24,6 @@
 % Informa que vai usar o pacote listings, 
 % disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
 \usepackage{listings}
-% Added by lyx2lyx
-\renewcommand{\textendash}{--}
-\renewcommand{\textemdash}{---}
 \end_preamble
 \use_default_options false
 \master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
@@ -45,6 +42,8 @@
 \font_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -75,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -89,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -160,6 +163,7 @@ Veja informações gerais aqui
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.doxygen.org/"
+literal "false"
 
 \end_inset
 
@@ -171,6 +175,7 @@ Veja exemplo aqui
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+literal "false"
 
 \end_inset
 
@@ -199,6 +204,7 @@ listings
 \begin_inset CommandInset href
 LatexCommand href
 target "http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
+literal "false"
 
 \end_inset
 
@@ -209,6 +215,7 @@ target "http://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings"
 \begin_inset CommandInset href
 LatexCommand href
 target "http://mirrors.ctan.org/macros/latex/contrib/listings/listings.pdf"
+literal "false"
 
 \end_inset
 
@@ -505,7 +512,7 @@ ent-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CStudent.hpp}
+tt] {../../src/CStudent.hpp}
 \end_layout
 
 \end_inset
@@ -537,7 +544,7 @@ lstinputlisting[ caption={Arquivo de implementação da classe CStudent.},
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CStudent.cpp}
+tt] {../../src/CStudent.cpp}
 \end_layout
 
 \end_inset
@@ -568,7 +575,7 @@ r-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CFisher.hpp}
+tt] {../../src/CFisher.hpp}
 \end_layout
 
 \end_inset
@@ -599,7 +606,7 @@ isher-cpp},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CFisher.cpp}
+tt] {../../src/CFisher.cpp}
 \end_layout
 
 \end_inset
@@ -625,12 +632,12 @@ status open
 \backslash
 lstset{language=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CFPC22_O2.}, label={CFPC
-22_O2-h},extendedchars=true,breaklines=true,basicstyle=
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CFPC22O2.}, label={CFPC2
+2O2-h},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CFPC22_O2.hpp}
+tt] {../../src/CFPC22O2.hpp}
 \end_layout
 
 \end_inset
@@ -656,12 +663,12 @@ status open
 \backslash
 lstset{language=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CFPC22_O2.},
- label={CFPC22_O2-cpp},extendedchars=true,breaklines=true,basicstyle=
+lstinputlisting[ caption={Arquivo de implementação da classe CFPC22O2.},
+ label={CFPC22O2-cpp},extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/CFPC22_O2.cpp}
+tt] {../../src/CFPC22O2.cpp}
 \end_layout
 
 \end_inset
@@ -699,7 +706,7 @@ texttt{main()}.}, label={main-cpp},extendedchars=true,breaklines=true,basicstyle
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/main.cpp}
+tt] {../../src/main.cpp}
 \end_layout
 
 \end_inset
@@ -741,7 +748,7 @@ lstinputlisting[caption=,extendedchars=true,breaklines=true,basicstyle=
 \backslash
 footnotesize
 \backslash
-tt] {../listagens/Programa.out}   
+tt] {../../src/Programa.out}   
 \end_layout
 
 \begin_layout Plain Layout
